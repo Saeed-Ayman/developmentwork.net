@@ -51,6 +51,15 @@ return [
     */
 
     'channels' => [
+        'object-log' => [
+            'driver' => 'single',
+            'path' => storage_path('logs/object-log.log'),
+        ],
+
+        'phone-verification' => [
+            'driver' => 'single',
+            'path' => storage_path('logs/phone-verification.log'),
+        ],
 
         'stack' => [
             'driver' => 'stack',
